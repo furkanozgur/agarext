@@ -8,3 +8,7 @@ function keydown(event) {
         setTimeout(ilikedick, imlost*2);
     }
 }
+function ilikedick() {
+    $("body").trigger($.Event("keydown", { keyCode: 32}));
+    $("body").trigger($.Event("keyup", { keyCode: 32}));
+}
